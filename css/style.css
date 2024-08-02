@@ -4,7 +4,6 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
-
 }
 .navbar{
     height: 60px;
@@ -22,7 +21,6 @@
 .catalogo::-webkit-scrollbar {
     display: none;  /* Para Chrome, Safari y Opera */
 }
-
 .card {
     height: 50vh !important;
     background-color: rgba(17, 160, 168, 0) !important;
@@ -44,7 +42,6 @@
     filter: brightness(0.7);
     
 }
-
 .card-img-overlay {
     position: absolute;
     display: flex;

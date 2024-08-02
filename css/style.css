@@ -1,0 +1,68 @@
+.background{
+    background-image: url('../Img/pngwing.com.png');
+    /* background-color: rgb(29, 108, 112)!important; */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.navbar{
+    height: 60px;
+    background-color: rgb(17, 160, 168)!important; 
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    margin-top: -100vh;
+}
+.catalogo {
+    height: calc(100vh - 0vmin - 0rem);
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
+    scrollbar-width: none;  /* Para Firefox */
+}
+.catalogo::-webkit-scrollbar {
+    display: none;  /* Para Chrome, Safari y Opera */
+}
+
+.card {
+    height: 50vh !important;
+    background-color: rgba(17, 160, 168, 0) !important;
+    color: rgb(21, 125, 131) !important;
+    border: none !important;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card-img-top{
+    height: 100vh !important;
+}
+.card:hover {
+    filter: brightness(0.7);
+    
+}
+
+.card-img-overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+  
+.play {
+    width: 10vh !important; /* Ajusta el tamaño del icono de play según tus necesidades */
+    height: 10vh !important;
+}
+
+.vh-5{
+    margin-top: 5%;
+}

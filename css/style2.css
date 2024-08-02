@@ -1,0 +1,23 @@
+.main-container {
+    display: flex;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    height: 100vh; /* Ocupa toda la altura del viewport */
+}
+header{
+    width: 35% !important;
+    height: 100vh !important;
+    background-color: rgb(29, 108, 112)!important;
+    display: flex;
+}
+section{
+    width: 65% !important;
+    height: 100% !important;
+    background-image: url('../Img/pngwing.com.png');
+}
+img{
+    width: 25vh;
+}
+.video-container{
+    width: 95% !important;
+
+}

@@ -12,25 +12,26 @@
     border-bottom-right-radius: 25px ;
     margin-top: -100vh;
 }
+
 .catalogo {
     height: calc(100vh - 0vmin - 0rem);
     overflow-y: scroll;
-    -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
-    scrollbar-width: none;  /* Para Firefox */
+    /*-ms-overflow-style: none;   Para Internet Explorer y Edge */
+    /*scrollbar-width: none;   Para Firefox */
 }
 .catalogo::-webkit-scrollbar {
-    display: none;  /* Para Chrome, Safari y Opera */
+    display: none;   /*Para Chrome, Safari y Opera */
 }
 .card {
-    height: 50vh !important;
+    height: 60vh !important;
     background-color: rgba(17, 160, 168, 0) !important;
     color: rgb(21, 125, 131) !important;
     border: none !important;
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    border-bottom-left-radius: 15px ;
-    border-bottom-right-radius: 15px ;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -54,7 +55,9 @@
 .card:hover .card-img-overlay {
     opacity: 1;
 }
-  
+.card-title{
+    color: rgb(255, 255, 255) !important;
+}
 .play {
     width: 10vh !important; /* Ajusta el tamaño del icono de play según tus necesidades */
     height: 10vh !important;
@@ -62,4 +65,33 @@
 
 .vh-5{
     margin-top: 5%;
+}
+.paginacion {
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+    background-color: rgba(21, 126, 131, 0.302)
+}
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: rgb(17, 160, 168);
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
 }

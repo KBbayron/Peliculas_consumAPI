@@ -163,19 +163,11 @@ class Carrito {
         let productoLS;
         var total = 0, subtotal = 0, iva = 0;
         productoLS = this.obtenerProductosLocalStorage();
-        console.log('prueba de productoLS', productoLS)
         for (let i = 0; i < productoLS.length; i++) {
-            console.log(' ***==', productoLS[i].precio);
-            console.log(' ***==', productoLS[i].cantidad);
             var element = Number(productoLS[i].precio * productoLS[i].cantidad);
-            console.log(' element', element);
             total = total + element;
-            console.log('total ***==', total);
         }
-        console.log('prueba de element', element);
-        console.log('prueba de total', total);
         iva = parseFloat(total * 0.13).toFixed(2);
-        console.log('prueba de iva', iva);
         subtotal = parseFloat(total - iva).toFixed(2);
         document.getElementById('subtotal').innerHTML = "$" + subtotal;
         document.getElementById('iva').innerHTML = "$" + iva;

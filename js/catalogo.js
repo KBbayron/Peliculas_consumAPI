@@ -28,8 +28,8 @@ const cargarPerliculas = async() => {
                 peliculas += `
                     <div class="card col-2 text-decoration-none mb-5">
                         <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" class="card-img-top agregar-carrito" alt="${pelicula.title}">
-                        <h5 class="card-title col-12 text-reset text-center" style="height: 25px">${pelicula.title}</h5>
-                        <h4 class="card-title col-12 text-reset text-center">₡${precio}</h4>
+                        <h5 class="card-title col-12 text-reset text-center mb-5" style="height: 25px">${pelicula.title}</h5>
+                        <h4 class="card-title col-12 text-reset text-center">${precio}</h4>
                         <div class="card-img-overlay pr-3 pl-3 pb-3 agregar-carrito" data-id="${pelicula.id}">
                             <h3 class="card-title col-12 text-reset text-center text-white h3 agregar-carrito">Agregar al carrito</h3>
                         </div>
